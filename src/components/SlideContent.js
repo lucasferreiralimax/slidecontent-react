@@ -1,10 +1,11 @@
 import React from 'react';
 import './SlideContent.css';
 
-function SlideContent() {
+function SlideContent(props) {
   return (
     <section className="slide-content">
       <div className="slide-contents">
+        {props.children}
       </div>
       <div className="slide-navigation">
         <button className="btn prev" type="button" name="button" onclick="prevHandler()">Ir para a esquerda</button>

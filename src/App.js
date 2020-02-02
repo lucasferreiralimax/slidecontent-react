@@ -3,14 +3,14 @@ import logo from './logo.svg';
 import './App.css';
 
 import SlideContent from './components/SlideContent';
-// import SlideItem from './components/SlideItem';
+import SlideItem from './components/SlideItem';
 import SlideFooter from './components/SlideFooter';
 
 function App() {
   return (
     <div className="app">
-      <h1>SlideContentAngular</h1>
-      <img width="200" src={logo} className="App-logo" alt="logo" />
+      <h1>SlideContentReact</h1>
+      <img width="200" src={logo} className="App-logo" alt="React" />
       <div className="example">
         <h2 className="slide-title">
           <svg width="60px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -20,6 +20,10 @@ function App() {
           </svg>
           <span>Slide infinito</span>
         </h2>
+        <SlideContent>
+          <SlideItem/>
+          <SlideItem/>
+        </SlideContent>
       </div>
       <div className="example">
         <h2 className="slide-title">
@@ -29,6 +33,10 @@ function App() {
           </svg>
           <span>Slide sem navegação</span>
         </h2>
+        <SlideContent>
+          <SlideItem/>
+          <SlideItem/>
+        </SlideContent>
       </div>
       <div className="example">
         <h2 className="slide-title">
@@ -37,6 +45,10 @@ function App() {
           </svg>
           <span>Slide com duração de 10 segundos</span>
         </h2>
+        <SlideContent>
+          <SlideItem/>
+          <SlideItem/>
+        </SlideContent>
       </div>
       <SlideFooter/>
     </div>
