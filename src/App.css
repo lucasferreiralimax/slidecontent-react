@@ -36,3 +36,50 @@
     transform: rotate(360deg);
   }
 }
+
+@font-face {
+  font-family: "Deus";
+  src: url(https://rimafavela.web.app/fonts/deus.0ea8c3f0.ttf),url(https://rimafavela.web.app/fonts/deus.87fcee5b.woff2),url(https://rimafavela.web.app/fonts/deus.94931b27.woff);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+.app h1 {
+  font-size: 3em;
+}
+.slide-title, h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slide-title svg,
+h3 svg {
+  margin-right: .5em;
+}
+
+.slide-title {
+  font-size: 2em;
+  margin: 2em 0;
+  border-top: 3px dashed #ccc;
+  padding-top: 2em;
+  color: #61DAFB;
+}
+.slide-title svg {
+  fill: #61DAFB;
+}
+.favela h1 {
+  font-family: "Deus";
+}
+.favela img {
+  filter: saturate(2) brightness(1.2);
+}

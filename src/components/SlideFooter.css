@@ -1,0 +1,14 @@
+.footer {
+  padding: 3em 0;
+}
+.footer a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #000;
+}
+.footer svg {
+  margin-right: .5em;
+}
