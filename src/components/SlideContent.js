@@ -8,8 +8,8 @@ function SlideContent(props) {
         {props.children}
       </div>
       <div className="slide-navigation">
-        <button className="btn prev" type="button" name="button" onclick="prevHandler()">Ir para a esquerda</button>
-        <button className="btn next" type="button" name="button" onclick="nextHandler()">Ir para a direita</button>
+        <button className="btn prev" type="button" name="button" onClick="prevHandler()">Ir para a esquerda</button>
+        <button className="btn next" type="button" name="button" onClick="nextHandler()">Ir para a direita</button>
       </div>
     </section>
   );
