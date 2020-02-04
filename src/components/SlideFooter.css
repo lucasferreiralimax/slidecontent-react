@@ -12,3 +12,9 @@
 .footer svg {
   margin-right: .5em;
 }
+
+@media (max-width: 640px) {
+  .footer a {
+    font-size: 1em;
+  }
+}

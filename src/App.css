@@ -59,3 +59,12 @@ h3 svg {
 .favela img {
   filter: saturate(2) brightness(1.2);
 }
+
+@media (max-width: 640px) {
+  .app h1 {
+    font-size: 2em;
+  }
+  .slide-title {
+    font-size: 1em;
+  }
+}
