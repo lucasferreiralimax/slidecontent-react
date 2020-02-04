@@ -22,8 +22,8 @@ function App() {
           </svg>
           <span>Slide infinito</span>
         </h2>
-        <SlideContent id="exemplo-1" name="exemplo-1" type="infinite" nav="true" animation="{ 'disabled': true }">
-          <SlideItem class="favela" actived="true" title="Fé em Deus"
+        <SlideContent id="exemplo-1" name="exemplo-1" type="infinite" nav="true" animation={{ 'disabled': true }}>
+          <SlideItem className="favela" actived="true" title="Fé em Deus"
       img={faveladascriancas} url="https://www.instagram.com/p/B68pN_Ph9IZ" target="_blank"/>
           <SlideItem title="Ermelino Matarazzo"
       img={ermelino} url="https://www.instagram.com/p/B7JoudZhHyv/" target="_blank"/>
@@ -38,7 +38,7 @@ function App() {
           <span>Slide sem navegação</span>
         </h2>
         <SlideContent id="exemplo-2" name="exemplo-2" type="infinite" nav="false">
-          <SlideItem class="favela" title="Fé em Deus"
+          <SlideItem className="favela" title="Fé em Deus"
       img={faveladascriancas} url="https://www.instagram.com/p/B68pN_Ph9IZ" target="_blank"/>
           <SlideItem actived="true" title="Ermelino Matarazzo"
       img={ermelino} url="https://www.instagram.com/p/B7JoudZhHyv/" target="_blank"/>
@@ -51,8 +51,8 @@ function App() {
           </svg>
           <span>Slide com duração de 10 segundos</span>
         </h2>
-        <SlideContent id="exemplo-3" name="exemplo-3" type="infinite" nav="true" animation="{ direction: 'prev', time: 1000 }">
-          <SlideItem class="favela" actived="true" title="Fé em Deus"
+        <SlideContent id="exemplo-3" name="exemplo-3" type="infinite" nav="true" animation={{ direction: 'prev', time: 10000 }}>
+          <SlideItem className="favela" actived="true" title="Fé em Deus"
       img={faveladascriancas} url="https://www.instagram.com/p/B68pN_Ph9IZ" target="_blank"/>
           <SlideItem title="Ermelino Matarazzo"
       img={ermelino} url="https://www.instagram.com/p/B7JoudZhHyv/" target="_blank"/>

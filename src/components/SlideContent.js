@@ -1,16 +1,34 @@
+/* eslint-disable */
 import React, { useEffect } from 'react';
 import './SlideContent.css';
 
 function SlideContent(props) {
 
   useEffect(() => {
-    slideAnimation();
-  });
-  const slideAnimation = () => {
-    setInterval(() => {
+    let slideAnimationInitial = setInterval(() => {
       nextHandler()
     }, 6000);
-  };
+
+    slideAnimationInitial
+
+    if(props.animation) {
+      clearInterval(slideAnimationInitial)
+
+      let slideAnimationOptions = setInterval(() => {
+        if(props.animation.direction == "prev") {
+          prevHandler()
+        } else {
+          nextHandler()
+        }
+      }, props.animation.time);
+
+      if(props.animation.disabled) {
+        clearInterval(slideAnimationOptions)
+      } else {
+        slideAnimationOptions
+      }
+    }
+  });
 
   const prevHandler = (e) => {
     let slides = []
