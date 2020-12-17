@@ -1,4 +1,4 @@
-[Live preview Project Online slidecontent-react.web.app](https://slidecontent-react.web.app).
+[Live preview Project Online slidecontent-reactjs.web.app](https://slidecontent-reactjs.web.app).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
