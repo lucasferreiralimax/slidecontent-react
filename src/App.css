@@ -7,10 +7,8 @@
   }
 }
 
-@font-face {
-  font-family: "Deus";
-  src: url(https://rimafavela.web.app/fonts/deus.0ea8c3f0.ttf),url(https://rimafavela.web.app/fonts/deus.87fcee5b.woff2),url(https://rimafavela.web.app/fonts/deus.94931b27.woff);
-}
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -54,7 +52,7 @@ h3 svg {
   fill: #61DAFB;
 }
 .favela h1 {
-  font-family: "Deus";
+  font-family: 'Great Vibes', cursive;
 }
 .favela img {
   filter: saturate(2) brightness(1.2);
