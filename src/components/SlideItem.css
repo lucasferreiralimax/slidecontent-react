@@ -1,7 +1,7 @@
 .slide-item {
   opacity: 0;
   transition: 0.3s;
-  height: 100vh;
+  height: 100%;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -29,15 +29,24 @@
 .slide-item h1 {
   position: absolute;
   left: 50%;
-  top: 1em;
-  transform: translateX(-50%);
+  top: 2em;
+  transform: translate(-50%, -50%);
   background: rgba(255,255,255,0.7);
   padding: 0.5em;
   font-size: 2em;
+  margin: 0;
   width: 100%;
   text-align: center;
   z-index: 1;
 }
+
+@media (min-width: 640px) {
+  .slide-item h1 {
+    top: 50%;
+    font-size: 3em;
+  }
+}
+
 @-moz-keyframes opacityDelay {
   0% {
     opacity: 0;
