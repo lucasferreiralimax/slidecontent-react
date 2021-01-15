@@ -2,12 +2,12 @@
   padding: 3em 0;
 }
 .footer a {
-  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: 1.5em;
-  text-decoration: none;
   color: #000;
+  display: flex;
+  font-size: 1.5em;
+  justify-content: center;
+  text-decoration: none;
 }
 .footer svg {
   margin-right: .5em;
