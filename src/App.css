@@ -1,12 +1,3 @@
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 .App-logo {
@@ -65,4 +56,9 @@ h3 svg {
   .slide-title {
     font-size: 1em;
   }
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg);   }
+  to   { transform: rotate(360deg); }
 }
