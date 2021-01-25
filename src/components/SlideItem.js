@@ -4,7 +4,7 @@ import './SlideItem.css';
 function SlideItem(props) {
   return (
     <article className={ `${ props.className } slide-item ${props.actived ? " actived" : ""} `}>
-      <a href={props.url} target={props.target}>
+      <a data-testid="link-item" href={props.url} target={props.target}>
         <h1>{props.title}</h1>
         <img src={props.img} alt={props.title} />
       </a>
