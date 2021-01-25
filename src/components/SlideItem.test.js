@@ -3,7 +3,7 @@ import SlideItem from './SlideItem';
 import ermelino from './../assets/ermelino.jpg';
 
 describe("Should render <SlideItem/>", () => {
-  it('renders titles', () => {
+  it('renders simple item with props', () => {
     render(<SlideItem title="Ermelino Matarazzo"
     img={ermelino} url="https://github.com/lucasferreiralimax/slidecontent-react" target="_blank" />);
 
