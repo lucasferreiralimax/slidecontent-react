@@ -24,9 +24,9 @@ function App() {
         </h2>
         <SlideContent id="exemplo-1" name="exemplo-1" type="infinite" nav="true" animation={{ 'disabled': true }}>
           <SlideItem className="favela" actived="true" title="Fé em Deus"
-      img={faveladascriancas} url="https://www.instagram.com/p/B68pN_Ph9IZ" target="_blank"/>
+      img={faveladascriancas} url="https://github.com/lucasferreiralimax/slidecontent-react" target="_blank"/>
           <SlideItem title="Ermelino Matarazzo"
-      img={ermelino} url="https://www.instagram.com/p/B7JoudZhHyv/" target="_blank"/>
+      img={ermelino} url="https://github.com/lucasferreiralimax/slidecontent-react" target="_blank"/>
         </SlideContent>
       </div>
       <div className="example">
@@ -39,9 +39,9 @@ function App() {
         </h2>
         <SlideContent id="exemplo-2" name="exemplo-2" type="infinite" nav="false">
           <SlideItem className="favela" title="Fé em Deus"
-      img={faveladascriancas} url="https://www.instagram.com/p/B68pN_Ph9IZ" target="_blank"/>
+      img={faveladascriancas} url="https://github.com/lucasferreiralimax/slidecontent-react" target="_blank"/>
           <SlideItem actived="true" title="Ermelino Matarazzo"
-      img={ermelino} url="https://www.instagram.com/p/B7JoudZhHyv/" target="_blank"/>
+      img={ermelino} url="https://github.com/lucasferreiralimax/slidecontent-react" target="_blank"/>
         </SlideContent>
       </div>
       <div className="example">
@@ -53,9 +53,9 @@ function App() {
         </h2>
         <SlideContent id="exemplo-3" name="exemplo-3" type="infinite" nav="true" animation={{ direction: 'prev', time: 10000 }}>
           <SlideItem className="favela" actived="true" title="Fé em Deus"
-      img={faveladascriancas} url="https://www.instagram.com/p/B68pN_Ph9IZ" target="_blank"/>
+      img={faveladascriancas} url="https://github.com/lucasferreiralimax/slidecontent-react" target="_blank"/>
           <SlideItem title="Ermelino Matarazzo"
-      img={ermelino} url="https://www.instagram.com/p/B7JoudZhHyv/" target="_blank"/>
+      img={ermelino} url="https://github.com/lucasferreiralimax/slidecontent-react" target="_blank"/>
         </SlideContent>
       </div>
       <SlideFooter/>
