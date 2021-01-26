@@ -1,14 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.App-logo { pointer-events: none; }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  .App-logo { animation: App-logo-spin infinite 20s linear; }
 }
 
 .app {
@@ -19,9 +14,9 @@
   margin-top: 60px;
   text-align: center;
 }
-.app h1 {
-  font-size: 3em;
-}
+
+.app h1 { font-size: 3em; }
+
 .slide-title, h3 {
   align-items: center;
   display: flex;
@@ -39,23 +34,13 @@ h3 svg {
   margin: 2em 0;
   padding-top: 2em;
 }
-.slide-title svg {
-  fill: #61DAFB;
-}
-.favela h1 {
-  font-family: 'Great Vibes', cursive;
-}
-.favela img {
-  filter: saturate(2) brightness(1.2);
-}
+.slide-title svg { fill: #61DAFB; }
+.favela h1 { font-family: 'Great Vibes', cursive; }
+.favela img { filter: saturate(2) brightness(1.2); }
 
 @media (max-width: 640px) {
-  .app h1 {
-    font-size: 2em;
-  }
-  .slide-title {
-    font-size: 1em;
-  }
+  .app h1 { font-size: 2em; }
+  .slide-title { font-size: 1em; }
 }
 
 @keyframes App-logo-spin {

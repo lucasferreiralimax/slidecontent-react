@@ -1,13 +1,13 @@
 .slide-content {
-  color: #000;
-  width: calc(100% - 20px);
-  max-height: 100vh;
-  min-height: 300px;
-  max-width: 1000px;
-  margin: 0 auto;
   border-radius: 10px;
+  color: #000;
+  margin: 0 auto;
+  max-height: 100vh;
+  max-width: 1000px;
+  min-height: 300px;
   overflow: hidden;
   position: relative;
+  width: calc(100% - 20px);
 }
 .slide-content .btn {
   background: #fff;
@@ -45,27 +45,13 @@
   height: 50%;
   width: 5px;
 }
-.slide-content .prev {
-  left: 10px;
-}
-.slide-content .prev:active {
-  transform: translateY(-50%) translateX(10px);
-}
-.slide-content .prev:before {
-  transform: rotate(45deg) translate(17px, -10px);
-}
-.slide-content .prev:after {
-  transform: rotate(-45deg) translate(18px, 10px);
-}
-.slide-content .next {
-  right: 10px;
-}
-.slide-content .next:active {
-  transform: translateY(-50%) translateX(-10px);
-}
-.slide-content .next:before {
-  transform: rotate(-45deg) translate(11px, 19px);
-}
-.slide-content .next:after {
-  transform: rotate(45deg) translate(11px, -19px);
-}
+
+.slide-content .prev { left: 10px; }
+.slide-content .prev:active { transform: translateY(-50%) translateX(10px);    }
+.slide-content .prev:before { transform: rotate(45deg) translate(17px, -10px); }
+.slide-content .prev:after  { transform: rotate(-45deg) translate(18px, 10px); }
+
+.slide-content .next { right: 10px; }
+.slide-content .next:active { transform: translateY(-50%) translateX(-10px);   }
+.slide-content .next:before { transform: rotate(-45deg) translate(11px, 19px); }
+.slide-content .next:after  { transform: rotate(45deg) translate(11px, -19px); }
