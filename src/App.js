@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './assets/logo.svg';
 import faveladascriancas from './assets/faveladascriancas.jpg';
 import ermelino from './assets/ermelino.jpg';
 import './App.css';
