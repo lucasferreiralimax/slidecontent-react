@@ -17,6 +17,11 @@
 
 .app h1 { font-size: 3em; }
 
+.language button {
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
 .slide-title, h3 {
   align-items: center;
   display: flex;

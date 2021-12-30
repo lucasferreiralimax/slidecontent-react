@@ -1,9 +1,10 @@
 /* eslint-disable */
 import React, { useEffect } from 'react';
+import { useTranslation } from "react-i18next";
 import './SlideContent.css';
 
 function SlideContent(props) {
-
+  const { t } = useTranslation();
   useEffect(() => {
     let slideAnimationInitial = setInterval(() => {
       nextHandler()
@@ -80,8 +81,8 @@ function SlideContent(props) {
       </div>
       { props.nav === "true" &&
         <div className="slide-navigation">
-          <button className="btn prev" type="button" name="button" onClick={prevHandler}>Ir para a esquerda</button>
-          <button className="btn next" type="button" name="button" onClick={nextHandler}>Ir para a direita</button>
+          <button className="btn prev" type="button" name="button" onClick={prevHandler}>{t('to_left')}</button>
+          <button className="btn next" type="button" name="button" onClick={nextHandler}>{t('to_right')}</button>
         </div>
       }
     </section>
