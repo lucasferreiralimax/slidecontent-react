@@ -17,11 +17,6 @@
 
 .app h1 { font-size: 3em; }
 
-.language button {
-  margin: 0.5rem;
-  cursor: pointer;
-}
-
 .slide-title, h3 {
   align-items: center;
   display: flex;
@@ -42,6 +37,29 @@ h3 svg {
 .slide-title svg { fill: #61DAFB; }
 .favela h1 { font-family: 'Great Vibes', cursive; }
 .favela img { filter: saturate(2) brightness(1.2); }
+
+#nav {
+  display: flex;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+#nav a {
+  padding: 1rem;
+  margin: 1rem;
+  background: #eee;
+  color: #2c3e50;
+  border-radius: 10px;
+  text-decoration: none;
+  width: 100%;
+}
+#nav a.active {
+  background: #3ea3bf;
+  color: #fff;
+}
 
 @media (max-width: 640px) {
   .app h1 { font-size: 2em; }
