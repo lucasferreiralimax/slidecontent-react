@@ -33,16 +33,9 @@
   position: absolute;
   text-align: center;
   top: 2em;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   width: 100%;
   z-index: 1;
-}
-
-@media (min-width: 640px) {
-  .slide-item h1 {
-    font-size: 3em;
-    top: 50%;
-  }
 }
 
 @-moz-keyframes opacityDelay {
