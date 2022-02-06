@@ -26,7 +26,7 @@ function Language(props) {
   }, []);
 
   return (
-    <section className="language">
+    <section data-testid="language" className="language">
       <button onClick={changeLanguage}>pt-BR</button>
       <button onClick={changeLanguage}>en-US</button>
       <button onClick={changeLanguage}>es-ES</button>
