@@ -22,12 +22,12 @@ function App() {
     <Router>
       <div className="app">
         <Language />
-        <h1 className="App-logo">
-          <NavLink to="/">
+        <NavLink className="App-logo" to="/">
+          <h1>
             {t('title')}
-            <img width="100" src={logo} alt="React" />
-          </NavLink>
-        </h1>
+          </h1>
+          <img width="100" src={logo} alt="React" />
+        </NavLink>
         <nav id="nav">
           <NavLink to="/" className={({ isActive }) => isActive ? "active" : ""}>{t('nav.home')}</NavLink>
           <NavLink to="/about" className={({ isActive }) => isActive ? "active" : ""}>{t('nav.about')}</NavLink>
