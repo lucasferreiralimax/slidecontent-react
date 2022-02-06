@@ -6,5 +6,10 @@
   "slide_no_navigation": "Glisser pas de navigation",
   "slide_fix_time": "Glisser durée 10 secondes",
   "to_left": "va à gauche",
-  "to_right": "aller à droite"
+  "to_right": "aller à droite",
+  "about": "Une diapositive de contenu simple développée dans React.js avec des boutons de navigation et une minuterie dans l'animation de transition",
+  "nav": {
+    "home": "Démarrer",
+    "about": "Information"
+  }
 }

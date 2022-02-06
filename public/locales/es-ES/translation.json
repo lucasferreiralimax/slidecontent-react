@@ -6,5 +6,11 @@
   "slide_no_navigation": "Deslizar sin navegación",
   "slide_fix_time": "Deslizar con duración de 10 segundos",
   "to_left": "ve a la izquierda",
-  "to_right": "ve a la derecha"
+  "to_right": "ve a la derecha",
+  "not_found": "404 no encontrado",
+  "about": "Una diapositiva de contenido simple desarrollada en React.js con botones de navegación y un temporizador en la animación de transición",
+  "nav": {
+    "home": "Comienzo",
+    "about": "Información"
+  }
 }

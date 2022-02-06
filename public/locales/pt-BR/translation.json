@@ -6,5 +6,11 @@
   "slide_no_navigation": "Slide sem navegação",
   "slide_fix_time": "Slide com duração de 10 segundos",
   "to_left": "Ir para a esquerda",
-  "to_right": "Ir para a direita"
+  "to_right": "Ir para a direita",
+  "not_found": "404 Nada encontrado",
+  "about": "Um slide de conteúdo simples desenvolvido em Vue com botões de navegação e um timer na animação de transição",
+  "nav": {
+    "home": "Inicio",
+    "about": "Informações"
+  }
 }
