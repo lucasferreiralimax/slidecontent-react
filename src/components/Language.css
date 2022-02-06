@@ -1,0 +1,11 @@
+.language button {
+  margin: 0.5rem;
+  cursor: pointer;
+}
+.language button.active {
+  color: #fff;
+  background: #3ea3bf;
+  border: 0;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
