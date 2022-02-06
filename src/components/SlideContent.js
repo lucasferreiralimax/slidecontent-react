@@ -6,6 +6,7 @@ import './SlideContent.css';
 function SlideContent(props) {
   const { t } = useTranslation();
   useEffect(() => {
+    let slideAnimationOptions;
     let slideAnimationInitial = setInterval(() => {
       nextHandler()
     }, 6000);
@@ -15,7 +16,7 @@ function SlideContent(props) {
     if(props.animation) {
       clearInterval(slideAnimationInitial)
 
-      let slideAnimationOptions = setInterval(() => {
+      slideAnimationOptions = setInterval(() => {
         if(props.animation.direction == "prev") {
           prevHandler()
         } else {
@@ -28,6 +29,10 @@ function SlideContent(props) {
       } else {
         slideAnimationOptions
       }
+    }
+    return () => {
+      clearInterval(slideAnimationInitial);
+      clearInterval(slideAnimationOptions);
     }
   });
 
