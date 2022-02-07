@@ -2,6 +2,13 @@ import React, { useEffect } from 'react';
 
 import { useTranslation } from "react-i18next";
 
+import brasil from '../assets/flags/pt-BR.svg';
+import united from '../assets/flags/en-US.svg';
+import spanish from '../assets/flags/es-ES.svg';
+import french from '../assets/flags/fr-FR.svg';
+import russian from '../assets/flags/ru-RU.svg';
+import chine from '../assets/flags/zh-CN.svg';
+
 import './Language.css';
 import '../i18n';
 
@@ -27,12 +34,30 @@ function Language() {
 
   return (
     <section data-testid="language" className="language">
-      <button onClick={changeLanguage}>pt-BR</button>
-      <button onClick={changeLanguage}>en-US</button>
-      <button onClick={changeLanguage}>es-ES</button>
-      <button onClick={changeLanguage}>fr-FR</button>
-      <button onClick={changeLanguage}>ru-RU</button>
-      <button onClick={changeLanguage}>zh-CN</button>
+      <button onClick={changeLanguage}>
+        <img src={brasil} alt="pt-BR"/>
+        pt-BR
+      </button>
+      <button onClick={changeLanguage}>
+        <img src={united} alt="en-US"/>
+        en-US
+      </button>
+      <button onClick={changeLanguage}>
+        <img src={spanish} alt="es-ES"/>
+        es-ES
+      </button>
+      <button onClick={changeLanguage}>
+        <img src={french} alt="fr-FR"/>
+        fr-FR
+      </button>
+      <button onClick={changeLanguage}>
+        <img src={russian} alt="ru-RU"/>
+        ru-RU
+      </button>
+      <button onClick={changeLanguage}>
+        <img src={chine} alt="zh-CN"/>
+        zh-CN
+      </button>
     </section>
   );
 }
