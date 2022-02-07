@@ -5,22 +5,22 @@ import { useTranslation } from "react-i18next";
 import './Language.css';
 import '../i18n';
 
-function Language(props) {
+function Language() {
   const { i18n } = useTranslation();
   const changeLanguage = ({ target }) => {
     document.querySelectorAll('.language button').forEach((item) => {
-      item.classList.remove('active');
+      item.classList.remove('actived');
     });
-    target.classList.add('active');
+    target.classList.add('actived');
     i18n.changeLanguage(target.textContent);
   };
 
   useEffect(() => {
     for(let item of document.querySelectorAll('.language button')) {
       if (item.textContent === localStorage.getItem('i18nextLng')) {
-        item.classList.add('active')
+        item.classList.add('actived')
       } else {
-        item.classList.remove('active')
+        item.classList.remove('actived')
       }
     }
   }, []);
