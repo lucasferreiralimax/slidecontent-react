@@ -9,9 +9,9 @@
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.2.0",
+    "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^14.2.0",
-    "i18next": "^21.8.4",
+    "i18next": "^21.8.5",
     "i18next-browser-languagedetector": "^6.1.4",
     "i18next-http-backend": "^1.4.1",
     "react": "^18.1.0",
