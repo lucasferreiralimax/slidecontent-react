@@ -1,63 +1,50 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useCallback } from 'react';
 
 import { useTranslation } from "react-i18next";
-
-import brasil from '../assets/flags/pt-BR.svg';
-import united from '../assets/flags/en-US.svg';
-import spanish from '../assets/flags/es-ES.svg';
-import french from '../assets/flags/fr-FR.svg';
-import russian from '../assets/flags/ru-RU.svg';
-import chine from '../assets/flags/zh-CN.svg';
 
 import './Language.css';
 import '../i18n';
 
 function Language() {
   const { i18n } = useTranslation();
-  const changeLanguage = ({ target }) => {
-    document.querySelectorAll('.language button').forEach((item) => {
-      item.classList.remove('actived');
-    });
-    target.classList.add('actived');
-    i18n.changeLanguage(target.textContent);
-  };
+  const languages = ['pt-BR', 'en-US', 'es-ES', 'fr-FR', 'ru-RU', 'zh-CN'];
+
+  const handleLanguage = useCallback(
+    (language, event) => {
+      document.querySelectorAll('.language button').forEach((item) => {
+        item.classList.remove('actived');
+      });
+
+      i18n.changeLanguage(language);
+      localStorage.setItem('language', language);
+      document.documentElement.lang = language;
+      if (event) event.target.classList.add('actived');
+    },
+    [i18n],
+  );
 
   useEffect(() => {
+    const lang = localStorage.getItem('language');
+    
+    lang
+      ? handleLanguage(lang)
+      : handleLanguage('pt-BR');
+
     for(let item of document.querySelectorAll('.language button')) {
-      if (item.textContent === localStorage.getItem('i18nextLng')) {
-        item.classList.add('actived')
-      } else {
-        item.classList.remove('actived')
-      }
+      item.textContent === lang
+        ? item.classList.add('actived')
+        : item.classList.remove('actived');
     }
-  }, []);
+  }, [handleLanguage]);
 
   return (
     <section data-testid="language" className="language">
-      <button onClick={changeLanguage}>
-        <img src={brasil} alt="pt-BR"/>
-        pt-BR
-      </button>
-      <button onClick={changeLanguage}>
-        <img src={united} alt="en-US"/>
-        en-US
-      </button>
-      <button onClick={changeLanguage}>
-        <img src={spanish} alt="es-ES"/>
-        es-ES
-      </button>
-      <button onClick={changeLanguage}>
-        <img src={french} alt="fr-FR"/>
-        fr-FR
-      </button>
-      <button onClick={changeLanguage}>
-        <img src={russian} alt="ru-RU"/>
-        ru-RU
-      </button>
-      <button onClick={changeLanguage}>
-        <img src={chine} alt="zh-CN"/>
-        zh-CN
-      </button>
+      {languages.map((language) => (
+        <button key={language} className={`btn ${language}`} onClick={(e) => handleLanguage(language, e)}>
+          <img src={require(`../assets/flags/${language}.svg`)} alt={language}/>
+          {language}
+        </button>
+      ))}
     </section>
   );
 }
