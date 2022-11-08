@@ -18,4 +18,8 @@ describe("Should render <AppLogo/>", () => {
   it('renders app-logo', () => {
     expect(screen.getByTestId('app-logo')).toBeInTheDocument();
   });
+  it('render Logo React', () => {
+    expect(screen.getByAltText('Logo React')).toBeInTheDocument();
+    expect(screen.getByAltText('Logo React').getAttribute('width')).toBe('150');
+  });
 });
