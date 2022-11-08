@@ -6,13 +6,13 @@ import {
   Navigate
 } from "react-router-dom";
 
-import './App.css';
+import './style.css';
 
-import AppHeader from './components/base/AppHeader';
-import AppFooter from './components/base/AppFooter';
+import AppHeader from '../components/base/AppHeader';
+import AppFooter from '../components/base/AppFooter';
 
-import Home from './pages/Home';
-import About from './pages/About';
+import Home from '../views/Home';
+import About from '../views/About';
 
 function App() {
   return (
