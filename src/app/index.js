@@ -19,11 +19,13 @@ function App() {
     <Router>
       <div className="app">
         <AppHeader />
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/about" element={<About />} />
-          <Route path="*" element={<Navigate to ="/" />}/>
-        </Routes>
+        <main data-testid="app-main">
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/about" element={<About />} />
+            <Route path="*" element={<Navigate to ="/" />}/>
+          </Routes>
+        </main>
         <AppFooter/>
       </div>
     </Router>
