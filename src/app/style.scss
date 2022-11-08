@@ -8,8 +8,6 @@
   text-align: center;
 }
 
-.app h1 { font-size: 3em; }
-
 .slide-title, h3 {
   align-items: center;
   display: flex;
@@ -32,7 +30,6 @@
 .favela img { filter: saturate(2) brightness(1.2); }
 
 @media (max-width: 640px) {
-  .app h1 { font-size: 2em; }
   .slide-title { font-size: 1em; }
 }
 

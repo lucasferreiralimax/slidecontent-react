@@ -6,7 +6,7 @@ import {
   Navigate
 } from "react-router-dom";
 
-import './style.css';
+import './style.scss';
 
 import AppHeader from '../components/base/AppHeader';
 import AppFooter from '../components/base/AppFooter';
