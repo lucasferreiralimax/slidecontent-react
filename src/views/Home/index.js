@@ -28,14 +28,10 @@ function Home() {
             actived="true"
             title={t('god_faith')}
             img={faveladascriancas}
-            url="https://github.com/lucasferreiralimax/slidecontent-react"
-            target="_blank"
           />
           <SlideItem
             title={t('city')}
             img={ermelino}
-            url="https://github.com/lucasferreiralimax/slidecontent-react"
-            target="_blank"
           />
         </SlideContent>
       </div>
@@ -52,15 +48,11 @@ function Home() {
             className="favela"
             title={t('god_faith')}
             img={faveladascriancas}
-            url="https://github.com/lucasferreiralimax/slidecontent-react"
-            target="_blank"
           />
           <SlideItem
             actived="true"
             title={t('city')}
             img={ermelino}
-            url="https://github.com/lucasferreiralimax/slidecontent-react"
-            target="_blank"
           />
         </SlideContent>
       </div>
@@ -77,14 +69,10 @@ function Home() {
             actived="true"
             title={t('god_faith')}
             img={faveladascriancas}
-            url="https://github.com/lucasferreiralimax/slidecontent-react"
-            target="_blank"
           />
           <SlideItem
             title={t('city')}
             img={ermelino}
-            url="https://github.com/lucasferreiralimax/slidecontent-react"
-            target="_blank"
           />
         </SlideContent>
       </div>
