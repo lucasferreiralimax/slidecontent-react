@@ -8,7 +8,7 @@ import logo from '../../../assets/logo.svg';
 function AppLogo() {
   const { t } = useTranslation();
   return (
-    <NavLink className="App-logo" to="/">
+    <NavLink className="app-logo" data-testid="app-logo" to="/">
       <h1>
         {t('title')}
       </h1>

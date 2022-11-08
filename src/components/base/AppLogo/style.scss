@@ -1,4 +1,4 @@
-.App-logo {
+.app-logo {
   color: #2c3e50;
   cursor: pointer;
   display: flex;
@@ -8,7 +8,7 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo img { animation: App-logo-spin infinite 20s linear; }
+  .app-logo img { animation: App-logo-spin infinite 20s linear; }
 }
 
 @keyframes App-logo-spin {

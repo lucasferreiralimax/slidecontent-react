@@ -7,7 +7,7 @@ import './style.scss';
 function AppNavigation() {
   const { t } = useTranslation();
   return (
-    <nav id="nav">
+    <nav id="nav" data-testid="app-navigation">
       <NavLink to="/" className={({ isActive }) => isActive ? "active" : ""}>
         <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false" data-testid="HomeIcon" tabIndex="-1" title="HomeIcon"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
         {t('nav.home')}
