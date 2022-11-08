@@ -18,8 +18,8 @@ describe("Should render <App/>", () => {
     expect(slideTime).toBeInTheDocument()
   });
 
-  it('renders slide-footer', () => {
+  it('renders app-footer', () => {
     render(<App />);
-    expect(screen.getByTestId('slide-footer')).toBeInTheDocument();
+    expect(screen.getByTestId('app-footer')).toBeInTheDocument();
   });
 });
