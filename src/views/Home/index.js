@@ -23,10 +23,20 @@ function Home() {
           <span>{t('slide_infinity')}</span>
         </h2>
         <SlideContent id="exemplo-1" name="exemplo-1" type="infinite" nav="true" animation={{ 'disabled': true }}>
-          <SlideItem className="favela" actived="true" title={t('god_faith')}
-      img={faveladascriancas} url="https://github.com/lucasferreiralimax/slidecontent-react" target="_blank"/>
-          <SlideItem title={t('city')}
-      img={ermelino} url="https://github.com/lucasferreiralimax/slidecontent-react" target="_blank"/>
+          <SlideItem
+            className="favela"
+            actived="true"
+            title={t('god_faith')}
+            img={faveladascriancas}
+            url="https://github.com/lucasferreiralimax/slidecontent-react"
+            target="_blank"
+          />
+          <SlideItem
+            title={t('city')}
+            img={ermelino}
+            url="https://github.com/lucasferreiralimax/slidecontent-react"
+            target="_blank"
+          />
         </SlideContent>
       </div>
       <div className="example">
@@ -38,10 +48,20 @@ function Home() {
           <span>{t('slide_no_navigation')}</span>
         </h2>
         <SlideContent id="exemplo-2" name="exemplo-2" type="infinite" nav="false">
-          <SlideItem className="favela" title={t('god_faith')}
-      img={faveladascriancas} url="https://github.com/lucasferreiralimax/slidecontent-react" target="_blank"/>
-          <SlideItem actived="true" title={t('city')}
-      img={ermelino} url="https://github.com/lucasferreiralimax/slidecontent-react" target="_blank"/>
+          <SlideItem
+            className="favela"
+            title={t('god_faith')}
+            img={faveladascriancas}
+            url="https://github.com/lucasferreiralimax/slidecontent-react"
+            target="_blank"
+          />
+          <SlideItem
+            actived="true"
+            title={t('city')}
+            img={ermelino}
+            url="https://github.com/lucasferreiralimax/slidecontent-react"
+            target="_blank"
+          />
         </SlideContent>
       </div>
       <div className="example">
@@ -52,10 +72,20 @@ function Home() {
           <span>{t('slide_fix_time')}</span>
         </h2>
         <SlideContent id="exemplo-3" name="exemplo-3" type="infinite" nav="true" animation={{ direction: 'prev', time: 10000 }}>
-          <SlideItem className="favela" actived="true" title={t('god_faith')}
-      img={faveladascriancas} url="https://github.com/lucasferreiralimax/slidecontent-react" target="_blank"/>
-          <SlideItem title={t('city')}
-      img={ermelino} url="https://github.com/lucasferreiralimax/slidecontent-react" target="_blank"/>
+          <SlideItem
+            className="favela"
+            actived="true"
+            title={t('god_faith')}
+            img={faveladascriancas}
+            url="https://github.com/lucasferreiralimax/slidecontent-react"
+            target="_blank"
+          />
+          <SlideItem
+            title={t('city')}
+            img={ermelino}
+            url="https://github.com/lucasferreiralimax/slidecontent-react"
+            target="_blank"
+          />
         </SlideContent>
       </div>
     </>
