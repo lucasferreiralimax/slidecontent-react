@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
 
-import './style.css';
+import './style.scss';
 import logo from '../../../assets/logo.svg';
 
 function AppLogo() {

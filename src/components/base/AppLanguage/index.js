@@ -2,7 +2,7 @@ import React, { useEffect, useCallback } from 'react';
 
 import { useTranslation } from "react-i18next";
 
-import './style.css';
+import './style.scss';
 import '../../../i18n';
 
 function AppLanguage() {
