@@ -12,7 +12,7 @@ function AppLogo() {
       <h1>
         {t('title')}
       </h1>
-      <img width="100" src={logo} alt="React" />
+      <img width="150" src={logo} alt="React" />
     </NavLink>
   );
 }
