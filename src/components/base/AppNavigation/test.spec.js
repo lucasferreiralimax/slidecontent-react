@@ -18,4 +18,13 @@ describe("Should render <AppNavigation/>", () => {
   it('renders app-navigation', () => {
     expect(screen.getByTestId('app-navigation')).toBeInTheDocument();
   });
+  it('is AppNavigation render links', () => {
+    screen.getByTestId('app-navigation').querySelectorAll('.link').forEach((item) => {
+      expect(item).toBeInTheDocument()
+    })
+  })
+  it('is AppNavigation render icons', () => {
+    expect(screen.getByTestId('HomeIcon')).toBeInTheDocument()
+    expect(screen.getByTestId('MenuBookIcon')).toBeInTheDocument()
+  })
 });
