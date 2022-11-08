@@ -1,5 +1,5 @@
-.footer { padding: 3em 0; }
-.footer a {
+.app-footer { padding: 3em 0; }
+.app-footer a {
   align-items: center;
   color: #000;
   display: flex;
@@ -7,8 +7,8 @@
   justify-content: center;
   text-decoration: none;
 }
-.footer svg { margin-right: .5em; }
+.app-footer svg { margin-right: .5em; }
 
 @media (max-width: 640px) {
-  .footer a { font-size: 1em; }
+  .app-footer a { font-size: 1em; }
 }

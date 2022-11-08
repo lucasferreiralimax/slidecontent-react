@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
-import SlideItem from './SlideItem';
-import ermelino from './../assets/ermelino.jpg';
+import SlideItem from '.';
+import ermelino from '../../assets/ermelino.jpg';
 
 describe("Should render <SlideItem/>", () => {
   it('renders simple item with props', () => {

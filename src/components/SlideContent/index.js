@@ -1,7 +1,7 @@
 /* eslint-disable */
 import React, { useEffect } from 'react';
 import { useTranslation } from "react-i18next";
-import './SlideContent.css';
+import './style.css';
 
 function SlideContent(props) {
   const { t } = useTranslation();

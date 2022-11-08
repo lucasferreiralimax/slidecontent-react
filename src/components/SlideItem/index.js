@@ -1,5 +1,5 @@
 import React from 'react';
-import './SlideItem.css';
+import './style.css';
 
 function SlideItem(props) {
   return (

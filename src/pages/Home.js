@@ -4,8 +4,8 @@ import { useTranslation } from "react-i18next";
 import faveladascriancas from '../assets/faveladascriancas.jpg';
 import ermelino from '../assets/ermelino.jpg';
 
-import SlideContent from '../components/SlideContent';
-import SlideItem from '../components/SlideItem';
+import SlideContent from '../components/SlideContent/index.js';
+import SlideItem from '../components/SlideItem/index.js';
 
 function Home() {
   const { t } = useTranslation();

@@ -2,10 +2,10 @@ import React, { useEffect, useCallback } from 'react';
 
 import { useTranslation } from "react-i18next";
 
-import './Language.css';
-import '../i18n';
+import './style.css';
+import '../../../i18n';
 
-function Language() {
+function AppLanguage() {
   const { i18n } = useTranslation();
   const languages = ['pt-BR', 'en-US', 'es-ES', 'fr-FR', 'ru-RU', 'zh-CN'];
 
@@ -25,7 +25,7 @@ function Language() {
 
   useEffect(() => {
     const lang = localStorage.getItem('language');
-    
+
     lang
       ? handleLanguage(lang)
       : handleLanguage('pt-BR');
@@ -41,7 +41,7 @@ function Language() {
     <section data-testid="language" className="language">
       {languages.map((language) => (
         <button key={language} className={`btn ${language}`} onClick={(e) => handleLanguage(language, e)}>
-          <img src={require(`../assets/flags/${language}.svg`)} alt={language}/>
+          <img src={require(`../../../assets/flags/${language}.svg`)} alt={language}/>
           {language}
         </button>
       ))}
@@ -49,4 +49,4 @@ function Language() {
   );
 }
 
-export default Language;
+export default AppLanguage;

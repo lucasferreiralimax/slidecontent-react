@@ -1,12 +1,12 @@
 import { render, screen } from '@testing-library/react';
-import SlideFooter from './SlideFooter';
+import AppFooter from '.';
 
-describe("Should render <SlideFooter/>", () => {
+describe("Should render <AppFooter/>", () => {
   it('renders footer with credits and link', () => {
-    render(<SlideFooter/>);
+    render(<AppFooter/>);
 
-    const title = screen.getByTestId('slide-footer');
-    
+    const title = screen.getByTestId('app-footer');
+
     expect(title.querySelector('a').href).toBe('https://github.com/lucasferreiralimax/slidecontent-react')
     expect(title.querySelector('a').textContent).toBe('SlideContentReact - @lucasferreiralimax')
   });

@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
-import SlideContent from './SlideContent';
-import SlideItem from './SlideItem';
-import ermelino from './../assets/ermelino.jpg';
-import faveladascriancas from './../assets/faveladascriancas.jpg';
+import SlideContent from '.';
+import SlideItem from '../SlideItem';
+import ermelino from './../../assets/ermelino.jpg';
+import faveladascriancas from './../../assets/faveladascriancas.jpg';
 
 describe("Should render <SlideContent/>", () => {
   it('renders simple slide', () => {
