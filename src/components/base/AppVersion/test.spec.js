@@ -6,6 +6,9 @@ import pkg from '../../../../package.json';
 
 import AppVersion from '.';
 
+const appVersion = pkg.version;
+const reactVersion = pkg.dependencies.react.replace('^', '');
+
 describe("Should render <AppVersion/>", () => {
   beforeEach(() => {
     render(
@@ -17,7 +20,10 @@ describe("Should render <AppVersion/>", () => {
   it('renders AppVersion', () => {
     expect(screen.getByTestId('app-version')).toBeInTheDocument();
   });
-  it('AppVersion validation version', () => {
-    expect(screen.getByTestId('app-version').textContent).toBe(`version ${pkg.version}`);
+  it('AppVersion validation version SlideContent', () => {
+    expect(screen.getByTestId('app-version').textContent).toBe(`version SlideContent ${appVersion}`);
+  });
+  it('AppVersion validation version React', () => {
+    expect(screen.getByTestId('react-version').textContent).toBe(`version React ${reactVersion}`);
   });
 });

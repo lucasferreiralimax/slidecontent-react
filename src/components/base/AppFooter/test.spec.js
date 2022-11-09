@@ -6,6 +6,9 @@ import AppFooter from '.';
 
 import pkg from '../../../../package.json';
 
+const appVersion = pkg.version;
+const reactVersion = pkg.dependencies.react.replace('^', '');
+
 describe("Should render <AppFooter/>", () => {
   it('renders footer with credits and link', () => {
     render(
@@ -17,6 +20,6 @@ describe("Should render <AppFooter/>", () => {
     const title = screen.getByTestId('app-footer');
 
     expect(title.querySelector('a').href).toBe('https://github.com/lucasferreiralimax/slidecontent-react')
-    expect(title.querySelector('a').textContent).toBe(`version ${pkg.version}SlideContentReact@lucasferreiralimax`)
+    expect(title.querySelector('a').textContent).toBe(`version React ${reactVersion}version SlideContent ${appVersion}SlideContentReact@lucasferreiralimax`)
   });
 });
