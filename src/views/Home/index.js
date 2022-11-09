@@ -76,6 +76,42 @@ function Home() {
           />
         </SlideContent>
       </div>
+      <div className="example">
+        <h2 className="slide-title">
+          <svg xmlns="http://www.w3.org/2000/svg" width="60px" height="60px" viewBox="0 0 24 24"><path d="M11.5 18.5a1 1 0 1 0 1 1 1 1 0 0 0-1-1Zm9-15a1 1 0 0 0-1-1h-16a1 1 0 0 0-1 1v16a1 1 0 0 0 2 0v-15h15a1 1 0 0 0 1-1Zm-5 15a1 1 0 1 0 1 1 1 1 0 0 0-1-1Zm-8 0a1 1 0 1 0 1 1 1 1 0 0 0-1-1Zm12-12a1 1 0 1 0 1 1 1 1 0 0 0-1-1Zm0 4a1 1 0 1 0 1 1 1 1 0 0 0-1-1Zm0 4a1 1 0 1 0 1 1 1 1 0 0 0-1-1Zm0 4a1 1 0 1 0 1 1 1 1 0 0 0-1-1Z"></path></svg>
+          <span>{t('slide_border')}</span>
+        </h2>
+        <SlideContent id="exemplo-3" name="exemplo-3" type="infinite" nav="true" border>
+          <SlideItem
+            className="favela"
+            actived="true"
+            title={t('god_faith')}
+            img={faveladascriancas}
+          />
+          <SlideItem
+            title={t('city')}
+            img={ermelino}
+          />
+        </SlideContent>
+      </div>
+      <div className="example">
+        <h2 className="slide-title">
+          <svg xmlns="http://www.w3.org/2000/svg" width="60px" height="60px" viewBox="0 0 1024 1024"><path d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-40 728H184V184h656v656z"></path></svg>
+          <span>{t('slide_squared')}</span>
+        </h2>
+        <SlideContent id="exemplo-3" name="exemplo-3" type="infinite" nav="true" border squared>
+          <SlideItem
+            className="favela"
+            actived="true"
+            title={t('god_faith')}
+            img={faveladascriancas}
+          />
+          <SlideItem
+            title={t('city')}
+            img={ermelino}
+          />
+        </SlideContent>
+      </div>
     </section>
   );
 }

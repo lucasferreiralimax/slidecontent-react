@@ -79,8 +79,12 @@ function SlideContent(props) {
         }
       }
   };
+
   return (
-    <section id={props.id} className="slide-content">
+    <section
+      id={props.id}
+      className={`slide-content${props.border ? ' border' : ''}${props.squared ? ' squared' : ''}`}
+    >
       <div className="slide-contents">
         {props.children}
       </div>
