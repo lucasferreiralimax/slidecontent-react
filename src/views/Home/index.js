@@ -12,7 +12,7 @@ import SlideItem from '../../components/SlideItem/index.js';
 function Home() {
   const { t } = useTranslation();
   return (
-    <>
+    <section className='home' data-testid='view-home'>
       <div className="example">
         <h2 className="slide-title">
           <svg width="60px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -76,7 +76,7 @@ function Home() {
           />
         </SlideContent>
       </div>
-    </>
+    </section>
   );
 }
 
