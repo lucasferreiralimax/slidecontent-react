@@ -46,7 +46,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 #### С кем вы можете поговорить о проекте?
 #### 誰がプロジェクトについて話すことができますか？
 #### À qui pouvez-vous parler du projet?
-#### Projeyle ilgili kim konuşabilirsin?
+#### Proje ile ilgili kiminle konuşabilirsin ?
 #### 你能谈谈这个项目吗？
 
 * :ghost: @lucasferreiralimax
